@@ -5,7 +5,7 @@ services:
     image: splunk-ca:latest
     #image: splunk/splunk:latest
     networks:
-      - cloudacademylabs
+      - labs
     ports:
       - 8000:8000
       - 9997:9997
@@ -14,5 +14,5 @@ services:
       - SPLUNK_PASSWORD=qwerty123
 
 networks:
-  cloudacademylabs:
-    name: cloudacademylabs
+  labs:
+    name: labs
